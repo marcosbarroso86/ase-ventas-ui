@@ -1,19 +1,12 @@
 import React from 'react';
-import NavBar from './components/navbar/navbar'
-import AnalistaComercial from './views/analista-comercial/analista-comercial'
-import AnalistaABM from './views/analista-abm/analista-abm'
-import Administrador from './views/administrador/administrador'
-
-
+import {NavBar}  from "./components/navbar/NavBar"
 import './App.css';
+import { Navigation } from './routes/Navigation';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-      <AnalistaComercial />
-      <AnalistaABM />
-      <Administrador />
+    <div>
+           <NavBar />
     </div>
   );
 }
