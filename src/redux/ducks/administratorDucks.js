@@ -25,14 +25,13 @@ export default function administratorReducer(state = initialData,action){
 export const getAdministratorAction = () => async (dispatch) =>{
     try{
         //TODO realizar una peticion GET a la API
-        const res={};
-        res.data;
+        
         //invoca a la funcion dispatch, pasandole un objeto que tiene el atributo type con la constante
         //y en el payload la data del reponse
         
         dispatch({
             type: GET_ADMINISTRATOR_SUCCESS,
-            payload: res.data
+            payload: {}
         })
     }catch(error){
         console.log(error);
