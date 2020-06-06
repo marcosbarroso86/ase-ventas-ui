@@ -9,28 +9,18 @@ import Paper from "@material-ui/core/Paper";
 
 export const Login= () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        height: "100vh"
-      }}
-    >
+    <div style={{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh"}}>
       <Paper>
         <Grid container>
-          <Grid item xs={5}>
+          <Grid item md={5}>
             <img src="/logo_ase.png" alt="nacional" style={{ width: "100%" }} />
           </Grid>
-          <Grid style={{ background: "orange" }} item xs={1} />
-          <Grid item xs={6}>
+          <Grid style={{ background: "orange" }} item md={1} />
+          <Grid item md={6}>
             <form noValidate autoComplete="off">
               <div>
                 <h6>Acceso al sistema</h6>
-                <TextField
-                  label="usuario"
-                  id="usuario"
-                  InputProps={{
+                <TextField label="usuario" id="usuario" InputProps={{
                     endAdornment: (
                       <InputAdornment>
                         {" "}
@@ -40,12 +30,8 @@ export const Login= () => {
                   }}
                 />
               </div>
-
               <div>
-                <TextField
-                  label="contraseña"
-                  id="contraseña"
-                  type="password"
+                <TextField label="contraseña" id="contraseña" type="password"
                   InputProps={{
                     endAdornment: (
                       <InputAdornment>
@@ -56,7 +42,6 @@ export const Login= () => {
                   }}
                 />
               </div>
-
               <div style={{ padding: 20 }}>
                 <Button variant="contained" color="primary">
                   Ingresar{" "}

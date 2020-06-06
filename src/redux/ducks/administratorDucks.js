@@ -22,18 +22,22 @@ export default function administratorReducer(state = initialData,action){
 //Ejemplo de un action que realiza un GET request
 
 //acciones
-export const getAdministratorAction = () => async (dispatch) =>{
-    try{
-        //TODO realizar una peticion GET a la API
-        
-        //invoca a la funcion dispatch, pasandole un objeto que tiene el atributo type con la constante
-        //y en el payload la data del reponse
-        
-        dispatch({
-            type: GET_ADMINISTRATOR_SUCCESS,
-            payload: {}
-        })
-    }catch(error){
-        console.log(error);
+export const getAdministratorAction = () => {
+    
+    return async dispatch => {
+        try{
+            //TODO realizar una peticion GET a la API
+            
+            //invoca a la funcion dispatch, pasandole un objeto que tiene el atributo type con la constante
+            //y en el payload la data del reponse
+            
+            dispatch({
+                type: GET_ADMINISTRATOR_SUCCESS,
+                payload: {}
+            })
+        }catch(error){
+            console.log(error);
+        }
     }
+    
 }
