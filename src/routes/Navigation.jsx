@@ -3,6 +3,7 @@ import { Navbar , Nav} from 'react-bootstrap'
 import { ABMPlatform } from "../views/ABMPlatform/ABMPlatform";
 import { ComercialPlatform } from "../views/comercialPlatform/ComercialPlatform";
 import { Administrator } from "../views/administrador/Administrator";
+import { Login } from "../views/login/Login";
 
 import {
   BrowserRouter as Router,
@@ -41,6 +42,9 @@ export const Navigation = () => {
             </Route>
             <Route path="/Administrador">
               <Administrator />
+            </Route>
+            <Route path = "/Login">
+            <Login/>
             </Route>
           </Switch>
         </div>
